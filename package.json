@@ -1,0 +1,22 @@
+{
+  "name": "svelte-playground",
+  "version": "1.0.0",
+  "description": "simple svelte playground repo",
+  "main": "index.js",
+  "repository": "https://github.com/EsmeraldiBejolli/svelte.git",
+  "author": "Esmeraldi Bejolli",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "build-silent": "webpack --silent",
+    "dev": "webpack --watch",
+    "start": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "@itslearning/protomorph": "git://github.com/itslearning/protomorph.git#v7.0.2",
+    "filemanager-webpack-plugin": "^1.0.26"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^3.1.4"
+  }
+}
