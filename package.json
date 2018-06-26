@@ -10,13 +10,31 @@
     "build": "webpack",
     "build-silent": "webpack --silent",
     "dev": "webpack --watch",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "new": "plop"
   },
   "devDependencies": {
     "@itslearning/protomorph": "git://github.com/itslearning/protomorph.git#v7.0.2",
-    "filemanager-webpack-plugin": "^1.0.26"
+    "filemanager-webpack-plugin": "^1.0.26",
+    "@frctl/fractal": "1.1.7",
+    "@frctl/handlebars": "1.1.4",
+    "@frctl/mandelbrot": "1.2.0",
+    "@itslearning/palette": "https://gitlab.itsbuild.net/frontend-guild/palette.git#3.0.0",
+    "@types/chai": "4.1.3",
+    "@types/glob": "5.0.34",
+    "del": "3.0.0",
+    "glob": "7.1.2",
+    "gulp": "3.9.1",
+    "gulp-htmlhint": "2.1.1",
+    "gulp-multi-dest": "1.3.7",
+    "gulp-rename": "1.2.2",
+    "hbs-json": "0.1.1",
+    "inquirer-directory": "2.1.0",
+    "plop": "2.0.0",
+    "slash": "2.0.0"
   },
   "dependencies": {
+    "@itslearning/semiotic": "https://gitlab.itsbuild.net/frontend-guild/semiotic.git#1.4.1",
     "webpack-dev-server": "^3.1.4"
   }
 }
