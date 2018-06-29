@@ -6,11 +6,14 @@
   "repository": "https://github.com/EsmeraldiBejolli/svelte.git",
   "author": "Esmeraldi Bejolli",
   "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=8.11.1"
+  },
   "scripts": {
     "build": "webpack",
-    "build-silent": "webpack --silent",
-    "dev": "webpack --watch",
-    "start": "webpack-dev-server",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
     "new": "plop"
   },
   "devDependencies": {
@@ -31,10 +34,50 @@
     "hbs-json": "0.1.1",
     "inquirer-directory": "2.1.0",
     "plop": "2.0.0",
-    "slash": "2.0.0"
+    "slash": "2.0.0",
+    "apidoc": "0.17.6",
+    "babel-eslint": "8.2.1",
+    "chai": "4.1.0",
+    "clear-require": "2.0.0",
+    "mocha": "5.0.0",
+    "nodemon": "1.11.0",
+    "nyc": "11.0.3",
+    "supertest": "3.0.0",
+    "supertest-as-promised": "4.0.2",
+    "testdouble": "3.2.2",
+    "testdouble-chai": "0.5.0"
   },
   "dependencies": {
     "@itslearning/semiotic": "https://gitlab.itsbuild.net/frontend-guild/semiotic.git#1.4.1",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.4",
+    "@types/express": "4.11.1",
+    "body-parser": "1.17.2",
+    "bunyan": "1.8.10",
+    "bunyan-format": "0.2.1",
+    "camelcase": "5.0.0",
+    "camelcase-keys": "4.1.0",
+    "config": "1.26.1",
+    "db-migrate": "0.11.1",
+    "db-migrate-mysql": "1.1.10",
+    "elasticsearch": "14.1.0",
+    "express": "4.15.3",
+    "express-jwt": "5.3.0",
+    "express-promise-router": "3.0.1",
+    "express-toobusy": "0.0.3",
+    "express-validator": "5.0.3",
+    "extend": "3.0.1",
+    "ioredis": "3.1.2",
+    "jsonwebtoken": "8.1.1",
+    "mysql": "2.13.0",
+    "nodemailer": "4.0.1",
+    "promise-mysql": "3.0.2",
+    "random-username-generator": "1.0.4",
+    "randomstring": "1.1.5",
+    "snakecase-keys": "1.1.1",
+    "socket.io": "2.0.3",
+    "socket.io-client": "2.0.3",
+    "socket.io-redis": "5.1.0",
+    "sqlstring": "2.3.1",
+    "yargs": "11.0.0"
   }
 }

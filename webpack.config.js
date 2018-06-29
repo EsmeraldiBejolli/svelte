@@ -1,7 +1,7 @@
 const baseConfig = require('@itslearning/protomorph/webpack.config');
 const path = require('path');
 
-const outPath = 'dist';
+const outPath = 'public/dist';
 
 const config = Object.assign({}, baseConfig, {
     entry: {

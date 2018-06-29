@@ -3,10 +3,18 @@
     <head>
     <meta charset="UTF-8">
     <title>Svelte Playground</title>
-    <link rel="stylesheet" href="dist/index.bundle.css">
+    <link rel="stylesheet" href="/dist/index.bundle.css">
     </head>
     <body>
         <main></main>
-    <script src="dist/index.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+<script>
+  var socket = io.connect('http://localhost:4040');
+  socket.on('news', function (data) {
+    console.log(data);
+    socket.emit('emitClient', { my: 'this is data that is emmited from client' });
+  });
+</script>
+    <script src="/dist/index.bundle.js"></script>
     </body>
 </html>

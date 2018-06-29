@@ -1,9 +1,13 @@
 
 <h1>{headline}</h1>
 <LazyImage />
-
+<WebWorkers />
+<ImmutableComponent />
 <script>
 import LazyImage from '../LazyImage/LazyImage.svelte';
+import WebWorkers from '../WebWorkers/WebWorkers.svelte';
+import ImmutableComponent from '../ImmutableComponent/ImmutableComponent.svelte';
+
 
 export default {
     data() {
@@ -12,7 +16,9 @@ export default {
         }
     },
     components:{
-        LazyImage
+        LazyImage,
+        WebWorkers,
+        ImmutableComponent
     }
 }
 </script>
